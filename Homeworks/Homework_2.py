@@ -11,8 +11,14 @@ else:
 #Problem 1
 # Write a Python program to find the sum of all even numbers from 1 to 100 using a loop. Make use of control flow constructs like the for loop and conditional statements.
 
+sum_of = 0
 
+for number in range(1, 101):
 
+    if number % 2 == 0:
+        sum_of += number
+
+print("The SUM of all even numbers from 1 to 100 is:", sum_of)
 
 #Problem 2
 #Write a Python script that prompts the user in the console a simple problem ( how much does 5 + 17 equal to ) until the user provides a correct answer.
@@ -22,12 +28,12 @@ else:
 #Problem 3
 #Write a Python script that iterates over the first 1000 numbers and prints "Fizz" if the number is divisible by 3, "Buzz" if it's divisible by 5, and "FizzBuzz" if it's divisible by both 3 and 5.
 
-for number in range(1, 1000):
-    if number % 3:
+for number in range(1, 1001):
+    if number % 3 == 0:
         print("Fizz")
-    elif number % 5:
+    elif number % 5 == 0:
         print("Buzz")
-    elif number % 3 and number % 5:
+    elif number % 3 == 0 and number % 5 == 0:
         print("FizzBuzz")
     else:
         print(number)
@@ -44,6 +50,11 @@ for number in range(1, 1000):
 #Problem 6
 #Write a Python program that takes an integer input from the user and prints the multiplication table for that number from 1 to 10 using a for loop.
 
+number = int(input("Enter a number: "))
+
+print(f"Multiplication table for {number}:")
+for i in range(1, 11):
+    print(f"{number} x {i} = {number * i}")
 
 #Problem 7
 #Create a Python program that checks if a given integer is a prime number. Use a for loop to iterate through possible divisors and use an if-else statement to determine if it's prime
