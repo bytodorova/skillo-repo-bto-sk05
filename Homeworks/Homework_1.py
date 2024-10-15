@@ -95,6 +95,6 @@ print(f"The length of the entered string is: {string_length}")
 
 string1 = str(input("Enter first string: "))
 string2 = str(input("Enter second string: "))
-concatenate_string = string1 + string2
+concatenate_str = string1 + string2
 
-print(f"{concatenate_string}")
+print(f"{concatenate_str}")
