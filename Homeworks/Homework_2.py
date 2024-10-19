@@ -23,7 +23,15 @@ print("The SUM of all even numbers from 1 to 100 is:", sum_of)
 #Problem 2
 #Write a Python script that prompts the user in the console a simple problem ( how much does 5 + 17 equal to ) until the user provides a correct answer.
 
-
+def question():
+    correct_answer = 22
+    while True:
+            user_answer = int(input("How much does 5 + 17 equal to? "))
+            if user_answer == correct_answer:
+                print("Correct! Well done.")
+                break
+            else:
+                print("That's not correct.Please try again.")
 
 #Problem 3
 #Write a Python script that iterates over the first 1000 numbers and prints "Fizz" if the number is divisible by 3, "Buzz" if it's divisible by 5, and "FizzBuzz" if it's divisible by both 3 and 5.
@@ -59,6 +67,20 @@ for i in range(1, 11):
 #Problem 7
 #Create a Python program that checks if a given integer is a prime number. Use a for loop to iterate through possible divisors and use an if-else statement to determine if it's prime
 
+def is_prime(number):
+    if number <= 1:
+        return False
+    for i in range(2, number):
+        if number % i == 0:
+            return False
+    return True
+
+num = int(input("Enter an integer: "))
+
+if is_prime(num):
+    print(f"{num} is a prime number.")
+else:
+    print(f"{num} is not a prime number.")
 
 #Problem 8 Pattern Printing
 # Write a program that takes an integer 'n' as input and prints the following pattern using nested for loops:
@@ -70,4 +92,8 @@ for i in range(1, 11):
 #1234
 
 n = int(input("Enter the number of rows: "))
-# range(1, n + 1)
+
+for i in range(1, n + 1):
+    for j in range(1, i + 1):
+        print(j, end=' ')
+    print('')
