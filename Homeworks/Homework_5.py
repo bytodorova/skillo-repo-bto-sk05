@@ -1,7 +1,4 @@
 #1. Create a list with the numbers from 1 to 10 and print it.
-from audioop import reverse
-
-from Homeworks.Homework_1 import length
 
 numbers = list(range(1, 11))
 print(numbers)
@@ -23,11 +20,21 @@ cities = ['Sydney', 'Melbourne', 'Brisbane', 'Canberra', 'Broome', "Adelaide", '
 lengths = [len(word) for word in cities]
 print(lengths)
 
+
 #3.1 Given a list of words, create a new dictionary mapping every word to it's length.
 
 
 
 #4. Write a function that takes a list and returns the sum of all even numbers in the list.
 
+# def sum_of_even():
+#     if numbers % 2 == 0:
+#         return sum(numbers)
+#
+# print(sum_of_even())
+
 #5. Given a tuple of integers, find the max and min values without using built-in functions.
+
+print(min(numbers_t))
+print(max(numbers_t))
 
