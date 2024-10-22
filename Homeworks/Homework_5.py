@@ -20,7 +20,6 @@ cities = ['Sydney', 'Melbourne', 'Brisbane', 'Canberra', 'Broome', "Adelaide", '
 lengths = [len(word) for word in cities]
 print(lengths)
 
-
 #3.1 Given a list of words, create a new dictionary mapping every word to it's length.
 
 
