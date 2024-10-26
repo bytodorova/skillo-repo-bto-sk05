@@ -22,7 +22,9 @@ print(lengths)
 
 #3.1 Given a list of words, create a new dictionary mapping every word to it's length.
 
-
+print(
+    {name:len(name) for name in cities}
+)
 
 #4. Write a function that takes a list and returns the sum of all even numbers in the list.
 
@@ -36,4 +38,57 @@ print(lengths)
 
 print(min(numbers_t))
 print(max(numbers_t))
+
+
+# 6. Implement a basic queue structure ( as a global var ) by defining two functions `enqueue` and `dequeue.
+
+# Global variable for the queue
+#queue = []
+
+# 7. Create a dictionary that maps students to their bank account number. Some students may have multiple bank accounts.
+
+students_accounts = {
+    "Alex": ["653342110", "987980001"],
+    "Marie": ["101066689"],
+    "Nico": ["101066689"],
+    "Thomas": ["404555987", "242526271", "389754210"]
+}
+
+print(students_accounts)
+print("Thomas' bank accounts:", students_accounts["Thomas"])
+
+# 8. Think of a function that can hash lists. Implement it and test it.
+
+
+# 9. Write a function that counts the frequency of each word in a given string (copy the first paragraph of an online article, for example) and returns a dict with the result.
+
+
+# 10. Create two sets with some common elements and find their intersection.
+
+
+set_num = {10, 12, 23, 24, 25}
+set_num_2 = {24, 25, 26, 37, 38}
+
+intersection = set_num.intersection(set_num_2)
+
+print(intersection)
+
+
+# 11. Given two sets, write a function that determines if one set is a subset of the other. Do not use `<` or `>`
+
+
+# 12. Write a function to remove duplicates from a list using a set.
+
+all_nums = set_num.union(set_num_2)
+print(f"{all_nums}")
+
+
+# 13. Use list comprehension to create a list of the squares of even numbers from 1 to 30.
+
+
+# 14. Given a list of words, create a dictionary where the keys are the words and the values are their lengths, using dictionary comprehension.
+
+
+
+# 15. Write a program that generates a set of prime numbers less than 100 using list comprehensions and sets.
 
