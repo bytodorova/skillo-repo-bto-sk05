@@ -28,11 +28,16 @@ print(
 
 #4. Write a function that takes a list and returns the sum of all even numbers in the list.
 
-# def sum_of_even():
-#     if numbers % 2 == 0:
-#         return sum(numbers)
-#
-# print(sum_of_even())
+def sum_of_even_numbers(my_numbers):
+    total = 0
+    for num in my_numbers:
+        if num % 2 == 0:
+            total += num
+    return total
+
+my_numbers = [10, 12, 13, 40, 5, 6]
+
+print(sum_of_even_numbers(my_numbers))
 
 #5. Given a tuple of integers, find the max and min values without using built-in functions.
 
@@ -62,6 +67,16 @@ print("Thomas' bank accounts:", students_accounts["Thomas"])
 
 # 9. Write a function that counts the frequency of each word in a given string (copy the first paragraph of an online article, for example) and returns a dict with the result.
 
+string = "Quality is more important than quantity. One home run is much better than two doubles"
+word_list = string.split()
+
+word_frequency = {}
+for word in word_list:
+    word_frequency[word] = word_frequency.get(word, 0) + 1
+
+for word, count in word_frequency.items():
+    print(f"{word}: {count}")
+
 
 # 10. Create two sets with some common elements and find their intersection.
 
@@ -88,7 +103,9 @@ print(f"{all_nums}")
 
 # 14. Given a list of words, create a dictionary where the keys are the words and the values are their lengths, using dictionary comprehension.
 
-
+words = ["Detroit", "Seattle", "Sacramento", "Orlando"]
+word_lengths = {word: len(word) for word in words}
+print(word_lengths)
 
 # 15. Write a program that generates a set of prime numbers less than 100 using list comprehensions and sets.
 
