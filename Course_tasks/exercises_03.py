@@ -6,6 +6,14 @@
 
 total_amount = 120  # Fill in the total amount here
 
+end_msg = "Thank you!"
+discount_msg = "You received a discount from your bill!"
+
+if total_amount > 100:
+    print (discount_msg)
+    print (end_msg)
+else:
+    print (end_msg)
 ...
 
 # Exercise 2: Temperature Checker
@@ -16,6 +24,10 @@ total_amount = 120  # Fill in the total amount here
 
 temperature = 22  # Fill in the temperature here
 
+if temperature >= 25:
+    print("Warm")
+else:
+    print("Cool")
 ...
 
 # Exercise 3: Time of the Day
@@ -27,6 +39,15 @@ temperature = 22  # Fill in the temperature here
 
 hour = 15  # Fill in the hour here
 
+if hour <= 12:
+    print("Good morning")
+elif hour > 12 and hour <= 17:
+    print("Good afternoon")
+elif hour > 17:
+    print ("Good Evening")
+else:
+    print(":)")
+
 ...
 
 # Exercise 4: Secret Message
@@ -37,6 +58,10 @@ hour = 15  # Fill in the hour here
 
 message = ""  # Fill in the message here
 
+if message !="":
+    print("Message found")
+else:
+    print("No message" )
 ...
 
 # Exercise 5: List Iteration
@@ -51,11 +76,23 @@ fruits = ["Apple", "Banana", "Orange", "Grape", "Watermelon"]
 
 # Write a program that prints all the even numbers from 1 to 20 using a for loop and the range() function.
 
+for num in range (1, 21):
+    if num == 10:
+        continue
+    if num % 2 == 0:
+        print(num)
 ...
 
 # Exercise 7: While Loop
 
 # Write a program using a while loop to find the sum of all numbers from 1 to 100.
+
+total = 0
+num = 1
+while num <= 100:
+    total += num
+    num += 1
+print(f"sum from 1 to 100 is {total}.")
 
 ...
 
